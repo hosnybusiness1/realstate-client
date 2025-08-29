@@ -40,7 +40,7 @@ const StyledNav = styled.ul`
     transition: 0.3s ease-in-out;
     &.close {
       /* border: 1px solid red; */
-      right: -28rem !important;
+      right: -30rem !important;
     }
   }
 `;
