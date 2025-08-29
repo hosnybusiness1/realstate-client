@@ -40,7 +40,7 @@ const StyledNav = styled.ul`
     transition: 0.3s ease-in-out;
     &.close {
       /* border: 1px solid red; */
-      right: -27rem !important;
+      right: -28rem !important;
     }
   }
 `;
@@ -185,7 +185,7 @@ const UserTag = styled.li`
 
 const MenuToggleBTN = styled.div`
   /* border: 1px solid red; */
-  color:var(--color-brand-800);
+  color: var(--color-brand-800);
   margin-right: 1rem;
   margin-top: 0.5rem;
   cursor: pointer;

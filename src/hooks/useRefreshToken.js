@@ -23,13 +23,15 @@ const userRefreshToken = () => {
       withXSRFToken: true,
     });
 
-    const result = response.data.data;
-    const { name, email, role, avatar } = result;
+    if (response?.data?.data) {
+      const result = response.data.data;
+      const { name, email, role, avatar } = result;
 
-    if (response.status === 200) setAuth({ name, email, role, avatar });
+      if (response.status === 200) setAuth({ name, email, role, avatar });
 
-    setLoading(false);
-    return { name, email, role, avatar };
+      setLoading(false);
+      return { name, email, role, avatar };
+    }
   };
   return refresh;
 };
