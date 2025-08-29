@@ -58,7 +58,7 @@ function LoginForm() {
       // console.log(response);
 
       const result = response.data.data;
-
+      console.log(result);
       if (result.email) {
         setAuth({ ...result });
         navigate(from, { replace: true });
